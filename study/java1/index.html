@@ -47,14 +47,18 @@
 
 
 
+  
+  
+  
+
 
 <!-- Open Graph image and Twitter Card metadata -->
 
-<title itemprop="name"></title>
-<meta property="og:title" content=ZgotmplZ />
-<meta name="twitter:title" content=ZgotmplZ />
-<meta itemprop="name" content=ZgotmplZ />
-<meta name="application-name" content=ZgotmplZ />
+<title itemprop="name">Mochisama - </title>
+<meta property="og:title" content=Mochisama&#32;-&#32; />
+<meta name="twitter:title" content=Mochisama&#32;-&#32; />
+<meta itemprop="name" content=Mochisama&#32;-&#32; />
+<meta name="application-name" content=Mochisama&#32;-&#32; />
 <meta property="og:site_name" content="" />
 
 
@@ -64,11 +68,11 @@
 <meta name="twitter:description" content="" />
 
 
-<base href="/404.html" />
-<link rel="canonical" href="/404.html" itemprop="url" />
-<meta name="url" content="/404.html" />
-<meta name="twitter:url" content="/404.html" />
-<meta property="og:url" content="/404.html" />
+<base href="/study/java1/" />
+<link rel="canonical" href="/study/java1/" itemprop="url" />
+<meta name="url" content="/study/java1/" />
+<meta name="twitter:url" content="/study/java1/" />
+<meta property="og:url" content="/study/java1/" />
 
 
 <meta property="og:updated_time" content="0001-01-01T00:00:00Z" />
@@ -377,10 +381,146 @@ powered by <a target="_blank" href="https://gohugo.io">Hugo</a> | themed with <a
 </aside>
 
             <main class="content container">
-                <h1>404: Page not found</h1>
-<p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="/">Head back home</a> to try finding it again.</p>
+                <div class="post">
+  <div class="info">
+  <h1 class="post-title">
+    <a href="/study/java1/"></a>
+  </h1>
+
+  <div class="headline">
+    <div>
+      
+      
+      <span> - </span>
+      <span class="reading-time">
+        
+          
+        
+
+        <span>1 min read</span>
+      </span>
+    </div>
+
+    
+  </div>
+
+  
+  
+
+  
+</div>
+
+  <pre tabindex="0"><code>title: &#34;Java入门&#34;
+hideToc: true
+date: 2025-01-09
+</code></pre><p>学习视频：<a href="[%e9%a2%84%e7%a7%9104%ef%bc%9a%e7%a1%ac%e4%bb%b6%e5%8f%8a%e5%86%af%e8%af%ba%e4%be%9d%e6%9b%bc%e7%bb%93%e6%9e%84_%e5%93%94%e5%93%a9%e5%93%94%e5%93%a9_bilibili]%28https://www.bilibili.com/video/BV12J41137hu?spm_id_from=333.788.videopod.episodes&amp;vd_source=3d17e87804253828d1e2e7556e28fe1c&amp;p=8%29">狂神说Java</a></p>
+<h1 id="引言">引言</h1>
+<h2 id="冯诺依曼体系结构">冯诺依曼体系结构</h2>
+<p><img src="D:%5Chugo_extended_0.140.2_windows-amd64%5Cmochi/static/images/java/1.png" alt="冯诺依曼体系结构"></p>
+<p>计算机软件按照功能划分，分为<strong>系统软件</strong>和<strong>应用软件</strong></p>
+<p>系统软件主要是Win/Linux/Mac/Dos之类的</p>
+<p>应用软件包括QQ/WX/WPS之类的</p>
+<h2 id="基本的dos命令">基本的Dos命令</h2>
+<pre tabindex="0"><code>d: # 盘符切换
+dir # 查看当前目录下所有文件
+cd /d d: # 切换目录(这里演示的是不同盘的地址切换，同盘的时候不需要/d )
+cd .. #返回上一级
+cls # 清理屏幕
+exit # 退出终端
+
+ipconfig # 查看电脑ip 如果是linux或者mac的话是ifconfig 
+
+calc # 打开计算器
+mspaint # 画图
+notepad # 打开记事本
+
+ping + url # 可以看到网站的ip地址
+
+md xxx # 创建xxx的文件夹 
+cd &gt;a.txt # 创建a的txt文件
+del a.txt # 删除文件
+rd xxx # 删除目录
+</code></pre><h2 id="高级语言">高级语言</h2>
+<p>大体上分为：<strong>面向过程</strong>和<strong>面向对象</strong>两大类</p>
+<p>C语言是面向过程的语言</p>
+<p>C++以及java是面向对象的语言</p>
+<p>C# = C sharp</p>
+<h1 id="java-入门">Java 入门</h1>
+<p>三高：高可用/高性能/高并发</p>
+<p>Java三大版本：JavaSE（标准版）/JavaME（嵌入式开发）/JavaEE（E企业级开发）</p>
+<p>JDK : Java Development Kit</p>
+<p>JRE :  Java Runtime Environment</p>
+<p>JVM : JAVA Virtual Machine</p>
+<p>上面三个是包含关系 : JDK &gt; JRE &gt; JVM</p>
+<h3 id="安装jdk">安装JDK</h3>
+<ul>
+<li>
+<p>网络搜索JDK8并下载exe</p>
+</li>
+<li>
+<p><strong>记住安装的路径</strong></p>
+</li>
+<li>
+<p>配置环境变量：
+1. 我的电脑&ndash;右键&ndash;属性
+2. 环境变量&ndash;JAVA_HOME
+3. 配置path变量</p>
+</li>
+<li>
+<p>测试JDK是否安装成果
+1. 打开cmd
+1. java -version</p>
+</li>
+</ul>
+<h3 id="notepad">notepad++</h3>
+<h3 id="helloworld">HelloWorld</h3>
+<pre tabindex="0"><code class="language-(java)" data-lang="(java)">public class test{
+	public static void main(String[] args){
+		System.out.print(&#34;HELLO,WORLD!&#34;);
+	}
+}
+</code></pre><p><strong>报错：</strong></p>
+<ol>
+<li>
+<p>print那行需要分号**；**</p>
+</li>
+<li>
+<p>class的名字和java文件名字对应</p>
+<p>​</p>
+</li>
+</ol>
+<p>转到该文件目录下，打开cmd</p>
+<p>需要先 javac test.java 进行编译（会生成class文件</p>
+<p>然后再 java test （运行class文件</p>
+<p><img src="D:%5Chugo_extended_0.140.2_windows-amd64%5Cmochi%5Cstatic%5Cimages%5Cjava%5C2.png" alt="1736427010724"></p>
+<h3 id="java程序运行机制">Java程序运行机制</h3>
+<ul>
+<li>编译型：类似与全文翻译</li>
+<li>解释型：类似于实时翻译</li>
+</ul>
+<p>Java是编译型+解释型</p>
+<p>从.java到.class是进行了编译操作</p>
+<p>具体运行起来是通过解释器</p>
+
+  
+  <hr>
+<div class="footer">
+    
+	    
+	    
+            <div class="next-post">
+                <a href="/study/250109/?ref=footer"><span style="font-weight:bold;">Next »</span><br>使用守则</a>
+            </div>
+        
+    
+</div>
+
+  
+</div>
             </main>
             
+  
+
         </div>
     </body>
 </html>
